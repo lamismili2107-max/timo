@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>الوكيل الرسمي - معلومات شحن Timo</title>
+  <style>
+    :root{--accent:#0d6efd;--bg:#f7f9fb;--card:#ffffff}
+    body{font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);margin:0;padding:20px;color:#111}
+    .container{max-width:980px;margin:24px auto}
+    header{display:flex;gap:16px;align-items:center}
+    .brand{display:flex;flex-direction:column}
+    h1{margin:0;font-size:24px}
+    p.lead{margin:8px 0 0;color:#555}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(13,38,59,0.06)}
+    .section-title{font-weight:800;margin-bottom:10px}
+    .methods li{margin:8px 0}
+    .contact-list a{display:block;margin:8px 0;padding:10px 12px;border-radius:10px;background:#eef5ff;color:#0b62d6;text-decoration:none}
+    .pill{display:inline-block;margin:8px 6px 0 0;padding:10px 12px;border:1px solid #e1e7f0;border-radius:999px;cursor:pointer}
+    .pill:hover{border-color:#c7d4ea}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #dbe3ef;background:#fff;cursor:pointer}
+    .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .chooser{display:none;gap:10px;margin-top:10px}
+    .note{background:#fff8e6;border-left:4px solid #ffd27a;padding:10px;border-radius:8px;margin-top:12px}
+    footer{margin-top:18px;color:#666;font-size:13px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>الوكيل الرسمي لتطبيق Timo — معلومات وخيارات التواصل</h1>
+        <p class="lead">هذه الصفحة معلوماتية فقط: طرق التواصل، طرق الدفع المتاحة، وفترات الاشتراك. عند الضغط على واتساب أو تيليجرام يتم توجيهك مباشرة للتواصل معي.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <div class="section-title">عن الخدمة</div>
+          <p>أنا الوكيل الرسمي المعتمد لشحن الرصيد داخل تطبيق Timo. أقدّم خدمة موثوقة وآمنة، مع دعم فترات اشتراك متنوعة حسب احتياجك.</p>
+
+          <div class="note">تنبيه: لا تشارك أي أكواد تحقق أو كلمات مرور. التواصل يكون فقط عبر الروابط الرسمية أدناه.</div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title">فترات الاشتراك المتاحة</div>
+          <p>اختر المدة، ثم اختر وسيلة التواصل ليتم فتح رسالة جاهزة تسأل عن سعر المدة المختارة.</p>
+          <div id="plans" style="margin-top:8px">
+            <div class="pill" data-months="1">شهر</div>
+            <div class="pill" data-months="2">شهران</div>
+            <div class="pill" data-months="3">3 شهور</div>
+            <div class="pill" data-months="5">5 شهور</div>
+            <div class="pill" data-months="6">6 شهور</div>
+            <div class="pill" data-months="12">12 شهر</div>
+          </div>
+          <div id="chooser" class="chooser">
+            <button class="btn primary" id="whatsappBtn">اسأل عبر واتساب</button>
+            <button class="btn" id="telegramBtn">اسأل عبر تيليجرام</button>
+            <div id="copiedMsg" style="display:none;color:#0b6d2f;font-size:13px">✔ تم نسخ الرسالة الجاهزة، سيتم فتح تيليجرام الآن.</div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title">طرق الدفع (للمعلومات)</div>
+          <div>
+            <strong>داخل مصر:</strong>
+            <ul class="methods">
+              <li>فودافون كاش (Vodafone Cash)</li>
+              <li>اتصالات كاش (Etisalat/WE Pay)</li>
+              <li>إنستا باي (InstaPay)</li>
+            </ul>
+          </div>
+          <div style="margin-top:8px">
+            <strong>دولي:</strong>
+            <ul class="methods">
+              <li>Binance</li>
+              <li>RedotPay</li>
+              <li>Bybit</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">التواصل السريع</div>
+          <div class="contact-list">
+            <a href="https://wa.me/201040191454" target="_blank" rel="noopener">واتساب: +20 104 019 1454</a>
+            <a href="https://t.me/Customer_Serrvise" target="_blank" rel="noopener">تيليجرام: @Customer_Serrvise</a>
+          </div>
+          <p style="margin-top:8px;color:#555;font-size:14px">بالضغط على الروابط أعلاه سيتم فتح المحادثة معي مباشرة.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title">تفاصيل مختصرة</div>
+          <p>وكيل رسمي موثّق من تطبيق Timo. لعرض إثبات التوثيق لجهات رسمية، تواصل معي عبر واتساب أو تيليجرام.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>موقع معلوماتي مُبسّط لأغراض التواصل والعرض في المشروع الجامعي.</p>
+    </footer>
+  </div>
+
+  <script>
+    // إعدادات التواصل
+    const whatsappNumber = '201040191454';
+    const telegramUsername = 'Customer_Serrvise';
+
+    let selectedMonths = null;
+
+    function arabicMonthsLabel(m){
+      if(m === 1) return 'شهر';
+      if(m === 2) return 'شهرين';
+      if(m === 3) return '3 شهور';
+      if(m === 5) return '5 شهور';
+      if(m === 6) return '6 شهور';
+      if(m === 12) return '12 شهر';
+      return m + ' شهور';
+    }
+
+    function buildMessage(){
+      const label = arabicMonthsLabel(selectedMonths);
+      return `مرحبًا، أريد الاستفسار عن سعر الاشتراك لمدة ${label} في تطبيق Timo. من فضلك أخبرني بالتكلفة وطريقة الدفع المناسبة.`;
+    }
+
+    // اختيار الخطة ثم إظهار أزرار القناة
+    document.querySelectorAll('#plans .pill').forEach(p => {
+      p.addEventListener('click', () => {
+        selectedMonths = parseInt(p.getAttribute('data-months'));
+        document.getElementById('chooser').style.display = 'flex';
+        document.getElementById('copiedMsg').style.display = 'none';
+        // تمرير تركيز بصري بسيط
+        document.querySelectorAll('#plans .pill').forEach(el=>el.style.borderColor='#e1e7f0');
+        p.style.borderColor = '#0d6efd';
+      });
+    });
+
+    // واتساب مع نص جاهز
+    document.getElementById('whatsappBtn').addEventListener('click', () => {
+      if(!selectedMonths){ alert('اختر مدة الاشتراك أولاً'); return; }
+      const text = encodeURIComponent(buildMessage());
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, '_blank');
+    });
+
+    // تيليجرام: نحاول بروتوكول tg:// مع نص جاهز، وإلا ننسخ النص ونفتح بروفايل التيليجرام
+    document.getElementById('telegramBtn').addEventListener('click', async () => {
+      if(!selectedMonths){ alert('اختر مدة الاشتراك أولاً'); return; }
+      const msg = buildMessage();
+      const tgDeep = `tg://resolve?domain=${telegramUsername}&text=${encodeURIComponent(msg)}`;
+
+      // نحاول فتح deep link أولاً
+      const opened = window.open(tgDeep);
+      // بعض المتصفحات تمنع/لا تدعم، فننسخ الرسالة ونفتح صفحة المستخدم كتجربة بديلة
+      setTimeout(async () => {
+        try{
+          await navigator.clipboard.writeText(msg);
+          document.getElementById('copiedMsg').style.display = 'block';
+        }catch(e){/* تجاهل */}
+        window.open(`https://t.me/${telegramUsername}`, '_blank');
+      }, 400);
+    });
+  </script>
+</body>
+</html>
